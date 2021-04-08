@@ -7,7 +7,7 @@ Python version used 3.7
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requirements file in root dir.
 
 ```bash
-in content root/
+in take-home-project/
 python3 -m venv /path/to/new/virtual/environment
 pip install -r requirements.txt
 python setup.py develop
