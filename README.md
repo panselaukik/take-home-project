@@ -20,6 +20,9 @@ data_processing/runner.py
 
 runs using named parameters --race_id and --season_year
 
-Sample Paramaters
+Sample Paramaters -
 
+python runner.py --race_id "841" --season_year "2009"
+
+This will create new csv files in dimensional_data/
 ```
