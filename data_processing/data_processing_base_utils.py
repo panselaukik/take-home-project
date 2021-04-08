@@ -6,6 +6,3 @@ from data_validation.data_sanity_checks import DataSanitization
 class Base(DataSanitization):
     def __init__(self):
         self.sanity_report = self.start_sanitization()
-
-
-
