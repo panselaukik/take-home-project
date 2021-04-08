@@ -9,7 +9,9 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install require
 ```bash
 in take-home-project/
 python3 -m venv /path/to/new/virtual/environment
+source venv/bin/activate
 pip install -r requirements.txt
+
 python setup.py develop
 ```
 
