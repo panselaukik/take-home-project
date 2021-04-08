@@ -65,11 +65,9 @@ class DataSanitization(Base):
                         self.valid_urls.append(url)
             except Exception as e:
                 self.invalid_urls.append(current_url)
-                self.sanity_checks['URL_VALIDATION'] = {'STATUS': 'FAILED', 'INVALID_URL': self.invalid_urls}
-                print("Error Validating URL--> Sanity Status updated", e)
 
         if len(self.invalid_urls) > 0:
-            return False
+            self.sanity_checks['URL_VALIDATION'] = {'STATUS': 'FAILED', 'INVALID_URL': self.invalid_urls}
         else:
             self.sanity_checks['URL_VALIDATION'] = 'SUCCESS'
             return True
